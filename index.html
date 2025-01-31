@@ -19,16 +19,36 @@
     </script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <style>
+        .adlam-display-font {
+            font-family: "ADLaM Display", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .sora-font {
+            font-family: "Sora", serif;
+            font-size: 18px;
+            font-weight: normal;
+        }
+    </style>
 </head>
 
-<body>
+<body class="adlam-display-font">
     <header>
+        <!-- Nav -->
         <nav class="flex justify-center justify-evenly items-center bg-[#FFF9F4] py-12 ">
             <div class="flex items-center gap-4">
                 <img class="py-3 ml-3" src="c1-assets/logo-header.png" alt="">
                 <h1 class="text-2xl text-neutral-950 ">Browse <span class="text-yellow-400">4</span>Pets</h1>
             </div>
-            <div >
+            <div>
                 <ul class="flex justify-center items-center gap-5">
                     <li class="text-neutral-950 text-xl"><a href="#">Find a pet</a></li>
                     <li class="text-neutral-950 text-xl"><a href="#">Breeds</a></li>
@@ -47,13 +67,28 @@
                     <path stroke-linecap="round" stroke-linejoin="round"
                         d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
                 </svg>
-                <button class= "border border-yellow-300 text-neutral-950 rounded-lg w-28 h-11 text-xl"> <a href="#">Login</a></button>
-                <button class="bg-yellow-300 text-neutral-950 text-xl rounded-lg  w-32 h-11 "><a href="#">Register</a></button>
+                <button class="border border-yellow-300 text-neutral-950 rounded-lg w-28 h-11 text-xl"> <a
+                        href="#">Login</a></button>
+                <button class="bg-yellow-300 text-neutral-950 text-xl rounded-lg  w-32 h-11 "><a
+                        href="#">Register</a></button>
             </div>
         </nav>
     </header>
-    <main>
 
+    <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
+        <!-- banner -->
+        <div class="relative">
+            <div class="absolute top-10 px-10">
+                <h1 class="w-3/6 text-5xl text-neutral-950">Pamper Your Pet, Because They Deserve the Bes</h1> <br>
+                <p class="sora-font text-neutral-950">Discover a world of treats, toys, and essentials handpicked for <br> your
+                    furry
+                    friends. Shop now and make tails wag with joy!</p> <br>
+                <button class="bg-yellow-300 sora-font text-neutral-950 text-xl rounded-lg  w-36 h-10 ">Find a pet</button>
+            </div>
+            <div>
+                <img src="c1-assets/cat-big.png" alt="">
+            </div>
+        </div>
     </main>
     <footer>
 
